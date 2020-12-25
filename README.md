@@ -1,16 +1,29 @@
 # apache-skywalking
 
-## 下载安装
-### https://mirrors.tuna.tsinghua.edu.cn/apache/skywalking/8.3.0/apache-skywalking-apm-8.3.0.tar.gz
+## 下载安装  
+https://mirrors.tuna.tsinghua.edu.cn/apache/skywalking/8.3.0/apache-skywalking-apm-8.3.0.tar.gz
 
 ## 执行命令
 ### tar -zxvf apache-skywalking-apm-8.3.0.tar.gz
 
-## skywalking端口介绍
+## 启动
+### /apache-skywalking-apm-bin/bin目录下启动 ./startup.sh
 
-#### 监控dashboard仪表盘:8080    
+## skywalking端口
 
-#### http数据收集:12800
+### web监控dashboard:8080
+#### 如果不想用8080作为端口,可以修改目录/apache-skywalking-apm-bin/webapp/webapp.yml
 
-#### gRPC:11800
+### http数据收集:12800
+
+### gRPC:11800
+
+## SpingBoot启动参数
+### -javaagent：解压apache-skywalking-apm-8.3.0.tar.gz后agent目录下skywalking-agent.jar绝对路径
+-Dskywalking.agent.service_name：SpringBoot Application Name
+-Dskywalking.collector.backend_service：部署skywalking的地址
+
+### -javaagent=D:\apache-skywalking-apm-bin\agent\skywalking-agent.jar
+### -Dskywalking.agent.service_name=ApolloDemo
+### -Dskywalking.collector.backend_service=XXX.XXX.XXX.XXX:11800
 
