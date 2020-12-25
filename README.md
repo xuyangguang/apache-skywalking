@@ -10,7 +10,7 @@ tar -zxvf apache-skywalking-apm-8.3.0.tar.gz
 /apache-skywalking-apm-bin/bin目录下启动 ./startup.sh  
 
 ## skywalking端口
-web监控dashboard:8080
+web监控dashboard:8080  
 如果不想用8080作为端口,可以修改目录/apache-skywalking-apm-bin/webapp/webapp.yml  
 http数据收集:12800  
 gRPC:11800  
