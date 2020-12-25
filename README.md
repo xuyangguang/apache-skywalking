@@ -7,7 +7,8 @@ https://mirrors.tuna.tsinghua.edu.cn/apache/skywalking/8.3.0/apache-skywalking-a
 tar -zxvf apache-skywalking-apm-8.3.0.tar.gz
 
 ## 启动
-/apache-skywalking-apm-bin/bin目录下启动 ./startup.sh  
+/apache-skywalking-apm-bin/bin目录下启动  
+./startup.sh  
 
 ## skywalking端口
 web监控dashboard:8080  
