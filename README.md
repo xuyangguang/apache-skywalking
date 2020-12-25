@@ -4,26 +4,25 @@
 https://mirrors.tuna.tsinghua.edu.cn/apache/skywalking/8.3.0/apache-skywalking-apm-8.3.0.tar.gz
 
 ## 执行命令
-### tar -zxvf apache-skywalking-apm-8.3.0.tar.gz
+tar -zxvf apache-skywalking-apm-8.3.0.tar.gz
 
 ## 启动
-### /apache-skywalking-apm-bin/bin目录下启动 ./startup.sh
+/apache-skywalking-apm-bin/bin目录下启动 ./startup.sh  
 
 ## skywalking端口
-
-### web监控dashboard:8080
-#### 如果不想用8080作为端口,可以修改目录/apache-skywalking-apm-bin/webapp/webapp.yml
-
-### http数据收集:12800
-
-### gRPC:11800
+web监控dashboard:8080
+如果不想用8080作为端口,可以修改目录/apache-skywalking-apm-bin/webapp/webapp.yml  
+http数据收集:12800
+gRPC:11800
 
 ## SpingBoot启动参数
-### -javaagent：解压apache-skywalking-apm-8.3.0.tar.gz后agent目录下skywalking-agent.jar绝对路径
+-javaagent：解压apache-skywalking-apm-8.3.0.tar.gz后agent目录下skywalking-agent.jar绝对路径
 -Dskywalking.agent.service_name：SpringBoot Application Name
 -Dskywalking.collector.backend_service：部署skywalking的地址
 
-### -javaagent=D:\apache-skywalking-apm-bin\agent\skywalking-agent.jar
-### -Dskywalking.agent.service_name=ApolloDemo
-### -Dskywalking.collector.backend_service=XXX.XXX.XXX.XXX:11800
+例如:  
+
+-javaagent=D:\apache-skywalking-apm-bin\agent\skywalking-agent.jar
+-Dskywalking.agent.service_name=ApolloDemo
+-Dskywalking.collector.backend_service=XXX.XXX.XXX.XXX:11800
 
