@@ -21,9 +21,10 @@ gRPC:11800
 -Dskywalking.agent.service_name：你的SpringBoot Application Name  
 -Dskywalking.collector.backend_service:部署skywalking的地址:11800
 
-我的:  
-IntelijIDEA 启动设置VM options设置:
+我的IntelijIDEA 启动设置:  
+VM options设置:
 -javaagent=D:\apache-skywalking-apm-bin\agent\skywalking-agent.jar  
 -Dskywalking.agent.service_name=ApolloDemo  
 -Dskywalking.collector.backend_service=XXX.XXX.XXX.XXX:11800  
+注意11800端口不需要改动
 
